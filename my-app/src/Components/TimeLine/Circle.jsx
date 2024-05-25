@@ -2,7 +2,7 @@ import React from 'react'
 
 const Circle = () => {
   return (
-    <div className='rounded-full w-4 h-4 bg-blue-500 mx-auto'>
+    <div className='bg-gradient-to-r from-purple-500 to-teal-500 rounded-full w-4 h-4  mx-auto'>
       
     </div>
   )
