@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import  NavBar  from "./Components/NavBar/NavBar";
 import Hero from './Components/Hero';
 import About from './Components/About/About';
+import Technologies from './Components/Technologies/Technologies';
 
 
 
@@ -22,6 +23,7 @@ function App() {
       <NavBar />
       <Hero/>
       <About/>
+      <Technologies/>
       </div>
      
      
