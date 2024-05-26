@@ -7,6 +7,7 @@ import Technologies from './Components/Technologies/Technologies';
 
 import TimeLine1 from './Components/TimeLine1/TimeLine1';
 import Project from './Components/Project/Project';
+import Contact from './Components/Contact/Contact';
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
       <TimeLine1 />
       <Technologies/>
       <Project/>
-     
+     <Contact/>
       </div>
      
      

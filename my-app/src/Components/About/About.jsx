@@ -1,6 +1,6 @@
 import React from 'react'
 import aboutme from './aboutme.jpg'
-import { ABOUT_TEXT } from '../../constants'
+import { ABOUT_TEXT, HERO_CONTENT } from '../../constants'
 import { motion } from "framer-motion"
 const About = () => {
   return (
@@ -27,7 +27,7 @@ const About = () => {
              transition={{duration:0.5}}
             className='w-full lg:w-1/2'>
               <div className='flex justify-center lg:justify-start'>
-                <p className='my-2 max-w-xl py-6'>{ABOUT_TEXT}</p>
+                <p className='my-2 max-w-xl py-6 text-xl font-light tracking-tighter'>{ABOUT_TEXT}</p>
 
               </div>
 
