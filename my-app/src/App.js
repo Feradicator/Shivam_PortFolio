@@ -4,8 +4,9 @@ import  NavBar  from "./Components/NavBar/NavBar";
 import Hero from './Components/Hero';
 import About from './Components/About/About';
 import Technologies from './Components/Technologies/Technologies';
-import events from './Components/TimeLine/events'
+
 import TimeLine1 from './Components/TimeLine1/TimeLine1';
+import Project from './Components/Project/Project';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <About/>
       <TimeLine1 />
       <Technologies/>
+      <Project/>
      
       </div>
      
