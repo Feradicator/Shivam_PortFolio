@@ -4,7 +4,7 @@ import project2 from "./project2.gif";
 import project3 from "./project3.gif";
 import project4 from "./project4.gif";
 import { useState } from "react";
-
+import { animate, motion } from "framer-motion"
 import { FaGithub } from "react-icons/fa";
 import { GrDeploy } from "react-icons/gr";
 const Project = () => {
@@ -20,10 +20,17 @@ const Project = () => {
 
   return (
     <div className="border-b border-neutral-800 pb-4">
-      <h1 className="my-20 text-center text-4xl">Projects</h1>
+      <motion.h1 
+       whileInView={{opacity:1,y:0}}
+       initial={{opacity:0,y:-100}}
+      transition={{duration:0.5}}
+      className="my-20 text-center text-4xl">Projects</motion.h1>
       <div className="flex justify-center items-center space-x-2 md:space-x-4 mb-8">
        
-        <div
+        <motion.div
+           whileInView={{opacity:1,x:0}}
+           initial={{opacity:0,x:-100}}
+          transition={{duration:1.5}}
           className="relative w-3/5 md:w-2/5"
           onMouseEnter={() => handleMouseEnter(0)}
           onMouseLeave={handleMouseLeave}
@@ -49,9 +56,12 @@ const Project = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+         whileInView={{opacity:1,x:0}}
+         initial={{opacity:0,x:100}}
+        transition={{duration:1.5}}
           className="relative w-3/5 md:w-2/5"
           onMouseEnter={() => handleMouseEnter(1)}
           onMouseLeave={handleMouseLeave}
@@ -77,14 +87,17 @@ const Project = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
 
 
       </div>
 
       <div className="flex justify-center items-center space-x-2 md:space-x-4">
-        <div
+        <motion.div
+         whileInView={{opacity:1,x:0}}
+         initial={{opacity:0,x:-100}}
+        transition={{duration:1.5}}
           className="relative w-3/5 md:w-2/5"
           onMouseEnter={() => handleMouseEnter(2)}
           onMouseLeave={handleMouseLeave}
@@ -110,8 +123,11 @@ const Project = () => {
               </a>
             </div>
           </div>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+         whileInView={{opacity:1,x:0}}
+         initial={{opacity:0,x:100}}
+        transition={{duration:1.5}}
           className="relative w-3/5 md:w-2/5"
           onMouseEnter={() => handleMouseEnter(3)}
           onMouseLeave={handleMouseLeave}
@@ -135,7 +151,7 @@ const Project = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
