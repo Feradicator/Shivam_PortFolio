@@ -51,7 +51,7 @@ const NavBar = () => {
           <FaLinkedin />
         </a>
         <a href="https://github.com/Feradicator" target="_blank" rel="noopener noreferrer">
-          <FaGithub className="text-white text-4xl" />
+          <FaGithub className="text-white text-2xl" />
         </a>
         <a href="https://www.instagram.com/imshivam_y?igsh=MWtlbnZmczNzNzBqNw==" target="_blank" rel="noopener noreferrer">
           <FaInstagram />
