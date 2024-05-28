@@ -12,7 +12,8 @@ const TimeLine1 = () => {
   let workIconStyles = { background: "#06D6A0" };
   let schoolIconStyles = { background: "#f9c74f" };
   return (
-    <div className="border-b border-neutral-800 pb-4">
+    <section id='timeline'>
+<div className="border-b border-neutral-800 pb-4">
     
     <h1 className="my-20 text-center text-4xl">Time Line</h1>
     <VerticalTimeline>
@@ -54,6 +55,8 @@ const TimeLine1 = () => {
       })}
     </VerticalTimeline>
   </div>
+    </section>
+    
   )
 }
 

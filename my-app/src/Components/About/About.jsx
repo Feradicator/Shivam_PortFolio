@@ -4,7 +4,8 @@ import { ABOUT_TEXT, HERO_CONTENT } from '../../constants'
 import { motion } from "framer-motion"
 const About = () => {
   return (
-    <div className='border-b border-neutral-900 pb-4'>
+    <section id="about">
+  <div className='border-b border-neutral-900 pb-4'>
         <h2 className='my-20 text-center text-4xl'>
         About 
         <span className='text-neutral-500'> Me</span>
@@ -36,6 +37,8 @@ const About = () => {
 
      
     </div>
+    </section>
+  
   )
 }
 

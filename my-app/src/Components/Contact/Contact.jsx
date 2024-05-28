@@ -2,7 +2,8 @@ import React from 'react'
 import { animate, motion } from "framer-motion"
 const Contact = () => {
   return (
-    <div className="border-b border-neutral-900 pb-20">
+    <section id='contact'>
+       <div className="border-b border-neutral-900 pb-20">
       <motion.h1
         whileInView={{opacity:1,y:0}}
         initial={{opacity:0,y:-100}}
@@ -27,6 +28,8 @@ const Contact = () => {
 
       </div>
     </div>
+    </section>
+   
   )
 }
 

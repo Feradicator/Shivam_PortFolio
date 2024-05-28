@@ -23,13 +23,17 @@ function App() {
      
       </div>
       <div className='container mx-auto px-8'>
+        
       <NavBar />
+      <div className="pt-32 md:pt-80">
       <Hero/>
       <About/>
       <TimeLine1 />
       <Technologies/>
       <Project/>
      <Contact/>
+      </div>
+     
       </div>
      
      
