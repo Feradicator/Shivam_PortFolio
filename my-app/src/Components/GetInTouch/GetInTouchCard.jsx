@@ -8,6 +8,11 @@ const GetInTouchCard = () => {
     email: '',
     message: ''
   });
+  const initialFormData = {
+    name: '',
+    email: '',
+    message: ''
+  };
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -30,6 +35,7 @@ const GetInTouchCard = () => {
           console.log('FAILED...', error.text);
         },
       );
+      setFormData(initialFormData);
       alert('Message sent successfully');
      
     } catch (error) {

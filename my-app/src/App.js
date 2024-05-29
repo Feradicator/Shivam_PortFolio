@@ -9,6 +9,7 @@ import TimeLine1 from './Components/TimeLine1/TimeLine1';
 import Project from './Components/Project/Project';
 import Contact from './Components/Contact/Contact';
 import GetInTouchCard from './Components/GetInTouch/GetInTouchCard';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -32,15 +33,17 @@ function App() {
         <TimeLine1 />
         <Project/>
         <Technologies/>
-        
         <GetInTouchCard/>
+       
      
       </div>
+      
      
       </div>
-     
+      <Footer/>
      
     </div>
+    
   );
 }
 
