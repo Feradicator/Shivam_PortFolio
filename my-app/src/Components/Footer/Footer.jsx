@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from "../../assets/projects/logo.png";
-
+import { FaWhatsapp} from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="text-gray-300 py-4 mt-8" style={{ backgroundColor: '#191C27' }}> {/* Use inline style */}
