@@ -4,11 +4,20 @@ import ShivamLogo from "../../assets/ShivamLogo.jpg";
 import { Link, animateScroll as scroll } from "react-scroll";
 import About from "../About/About";
 // import Technologies from './Components/Technologies/Technologies';
-
+import { motion } from "framer-motion";
 // import TimeLine1 from './Components/TimeLine1/TimeLine1';
 // import Project from './Components/Project/Project';
 // import Contact from './Components/Contact/Contact';
+const container = (delay) => ({
+  hidden: { x: -100, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 0.5, delay: delay },
+  },
+});
 const NavBar = () => {
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
@@ -65,13 +74,17 @@ const NavBar = () => {
       </div>
 
       {menuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-black text-white shadow-lg flex flex-col items-center gap-4 p-4 md:hidden z-50 transform transition-transform ease-in-out duration-300">
+        <motion.div
+        variants={container(0.5)}
+        initial="hidden"
+        animate="visible"
+        className="absolute top-full left-0 right-0 bg-black text-white shadow-lg flex flex-col items-center gap-4 p-4 md:hidden z-50 transform transition-transform ease-in-out duration-300">
           <a href="#about" className="hover:underline">About</a>
           <a href="#timeline" className="hover:underline">Timeline</a>
           <a href="#technologies" className="hover:underline">Technologies</a>
           <a href="#projects" className="hover:underline">Projects</a>
           <a href="#contact" className="hover:underline">Contact</a>
-        </div>
+        </motion.div>
       )}
     </nav>
   );

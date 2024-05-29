@@ -72,10 +72,19 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
+
+            <motion.a
+             variants={container(1.5)}
+             initial="hidden"
+             animate="visible"
+             className="my-2 max-w-xl py-6 font-light tracking-tighter text-xl"
+            href="https://drive.google.com/drive/folders/1RGp8Fa1mnuFE6P5fZEa_0GsBLyELbqQn?usp=drive_link" target="_blank">
             <button className="flex items-center bg-transparent border border-white rounded-full px-4 py-2 text-white hover:bg-gray-500 hover:text-white transition duration-300 ease-in-out">
               <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
               CV / RESUME
             </button>
+              </motion.a>
+          
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
