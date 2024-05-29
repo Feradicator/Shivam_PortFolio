@@ -4,6 +4,9 @@ import Shivam1 from "../assets/Shivam1.jpg";
 import Shivam2 from "../assets/Shivam2.jpg";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
+
 const container1 = (duration) => ({
   hidden: { opacity: 0 },
   visible: {
@@ -13,6 +16,7 @@ const container1 = (duration) => ({
     },
   },
 });
+
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
   visible: {
@@ -21,6 +25,7 @@ const container = (delay) => ({
     transition: { duration: 0.5, delay: delay },
   },
 });
+
 const Hero = () => {
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
@@ -67,6 +72,10 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
+            <button className="flex items-center bg-transparent border border-white rounded-full px-4 py-2 text-white hover:bg-gray-500 hover:text-white transition duration-300 ease-in-out">
+              <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
+              CV / RESUME
+            </button>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
