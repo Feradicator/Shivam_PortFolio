@@ -8,3 +8,10 @@
 .blur {
     backdrop-filter: blur(5px);
   }
+  .hover\:cursor-pointer:hover {
+    color: rgb(218, 216, 97);
+  }
+  
+  .hover\:underline:hover {
+    text-decoration: underline;
+  }

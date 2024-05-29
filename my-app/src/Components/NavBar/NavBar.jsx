@@ -39,7 +39,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between py-4 h-24 ${scrolling ? 'bg-gray-300 bg-opacity-5 backdrop-blur-lg' : ''}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between py-6 h-24 ${scrolling ? 'bg-gray-600 bg-opacity-5 backdrop-blur-lg' : ''}`}>
       <div className="flex-grow flex justify-center items-center gap-8 text-2xl hidden md:flex">
         {["about", "timeline", "projects","technologies", "contact"].map((section, index) => (
           <Link key={index} to={section} spy={true} smooth={true} duration={500} className={`hover:cursor-pointer ${activeSection === section ? 'text-yellow-300' : ''}`}>
