@@ -8,6 +8,7 @@ import Technologies from './Components/Technologies/Technologies';
 import TimeLine1 from './Components/TimeLine1/TimeLine1';
 import Project from './Components/Project/Project';
 import Contact from './Components/Contact/Contact';
+import GetInTouchCard from './Components/GetInTouch/GetInTouchCard';
 
 
 function App() {
@@ -27,11 +28,13 @@ function App() {
       <NavBar />
       <div className="pt-32 md:pt-80">
       <Hero/>
-      <About/>
-      <TimeLine1 />
-      <Technologies/>
-      <Project/>
-     <Contact/>
+        <About/>
+        <TimeLine1 />
+        <Project/>
+        <Technologies/>
+        
+        <GetInTouchCard/>
+     
       </div>
      
       </div>
