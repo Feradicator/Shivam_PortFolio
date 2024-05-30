@@ -9,7 +9,7 @@
     backdrop-filter: blur(5px);
   }
   .hover\:cursor-pointer:hover {
-    color: rgb(218, 216, 97);
+    color: 	#FFFF00;
   }
   
   .hover\:underline:hover {
